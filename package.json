@@ -1,0 +1,26 @@
+{
+  "name": "Algos_Data_Struck",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eralmendral/Algos_Data_Struck.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eralmendral/Algos_Data_Struck/issues"
+  },
+  "homepage": "https://github.com/eralmendral/Algos_Data_Struck#readme",
+  "dependencies": {
+    "jest": "^26.6.3"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
