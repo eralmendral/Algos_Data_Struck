@@ -14,16 +14,26 @@ class Node {
 }
 
 class Tree {
-  constructor(){
+  constructor() {
     this.root = null;
   }
 
   traverseBf() {
     const arr = [this.root];
 
-    while(arr.length) {
+    while (arr.length) {
       const node = arr.shift();
       arr.push(...node.children);
+      fn(node);
+    }
+  }
+
+  traverseDf() {
+    const arr = [this.root];
+
+    while (arr.length) {
+      const node = arr.shift();
+      arr.unshift(...node.children);
       fn(node);
     }
   }
