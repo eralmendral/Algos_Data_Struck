@@ -14,6 +14,23 @@ class Node {
 }
 
 class Tree {
+  constructor(){
+    this.root = null;
+  }
+
+  traverseBf() {
+    const arr = [this.root];
+
+    while(arr.length) {
+      const node = arr.shift();
+      arr.push(...node.children);
+      fn(node);
+    }
+  }
 }
+
+// const nodeA = new Node('a');
+// const tree = new Tree();
+// tree.root = nodeA;
 
 module.exports = { Tree, Node };
